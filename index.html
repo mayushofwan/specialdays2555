@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romantic Aesthetic</title>
+    <style>
+      /* Base styling for the body to center content and set aesthetics */
+      body {
+        font-family: "Cormorant Garamond", serif;
+        /* Elegant font choice for a romantic theme */
+        background-color: #fdf0f0;
+        /* Soft pastel pink background for a warm feel */
+        color: #4a4a4a;
+        /* Neutral text color for readability */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* Centers the container horizontally */
+        justify-content: center;
+        align-items: center;
+        /* Centers the container vertically */
+        min-height: 100vh;
+        /* Ensures the body fills the full viewport height */
+      }
+
+      /* Styling for the main content container */
+      .container {
+        max-width: 800px;
+        /* Restricts the width for readability */
+        background: white;
+        /* Clean white background for contrast */
+        border-radius: 15px;
+        /* Rounded corners for a softer look */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow for depth */
+        padding: 30px;
+        /* Adds internal spacing */
+        text-align: center;
+        /* Centers text within the container */
+      }
+
+      /* Header styling for the main title */
+      .header {
+        font-size: 2.5em;
+        /* Large font size for emphasis */
+        margin-bottom: 10px;
+        /* Space below the header */
+        color: #d96c75;
+        /* Romantic pinkish-red color */
+      }
+
+      /* Subheader styling for additional emphasis */
+      .subheader {
+        font-size: 1.2em;
+        /* Slightly smaller than the header */
+        margin-bottom: 20px;
+        /* Space below the subheader */
+        color: #7d555c;
+        /* Complementary darker pink shade */
+      }
+
+      /* Decorative line for visual separation */
+      .decorative-line {
+        height: 2px;
+        /* Thin line height */
+        background: linear-gradient(to right, #d96c75, transparent);
+        /* Fades to transparency */
+        margin: 20px auto;
+        /* Centered with spacing */
+        width: 50%;
+        /* Restricts width for balance */
+      }
+
+      /* Content text styling */
+      .content {
+        font-size: 1.1em;
+        /* Slightly larger than normal text */
+        line-height: 1.8;
+        /* Increases spacing between lines for readability */
+      }
+
+      /* Styling for the button */
+      button {
+        background-color: #d96c75;
+        /* Matches header color */
+        color: white;
+        /* White text for contrast */
+        border: none;
+        /* Removes default border */
+        padding: 10px 20px;
+        /* Internal spacing for the button */
+        font-size: 1em;
+        /* Standard font size */
+        border-radius: 20px;
+        /* Rounded edges for a friendly appearance */
+        cursor: pointer;
+        /* Pointer cursor to indicate interactivity */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Adds depth */
+        transition: background-color 0.3s;
+        /* Smooth transition on hover */
+      }
+
+      /* Button hover effect */
+      button:hover {
+        background-color: #b5545c;
+        /* Darkens the button color on hover */
+      }
+
+      /* Footer text styling */
+      .footer {
+        font-size: 0.9em;
+        /* Smaller font size for less emphasis */
+        color: #a4a4a4;
+        /* Light gray color */
+        margin-top: 30px;
+        /* Space above the footer */
+      }
+
+      /* Responsive styling for smaller screens */
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px;
+          /* Reduces padding for smaller viewports */
+        }
+
+        .header {
+          font-size: 2em;
+          /* Scales down header size */
+        }
+      }
+    </style>
+    <script>
+      // Function to display an image when the button is clicked
+      function showImage() {
+        // Create an image element dynamically
+        const image = document.createElement("img");
+        image.src = "https://i.imgur.com/Ddei6tM.jpeg"; // Google-hosted image URL
+        image.alt = "Romantic Scene";
+        image.style.marginTop = "20px"; // Adds spacing above the image
+        image.style.borderRadius = "10px"; // Rounded corners for aesthetics
+        image.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+        image.style.width = "200px"; // Set the width to make it smaller
+        image.style.height = "auto"; // Maintain the aspect ratio// Shadow for depth
+
+        // Append the image to the container
+        document.querySelector(".container").appendChild(image);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="header">2555 days made with love</h1>
+      <p class="subheader">Beautiful days will definitely come.</p>
+      <div class="decorative-line"></div>
+      <p class="content">
+        Hari itu, matahari terbit dengan sinar yang hangat, seolah mengerti
+        bahwa hari ini adalah hari istimewa. Tujuh tahun yang lalu, dua hati
+        yang saling mencinta berjanji untuk terus berjalan bersama, menghadapi
+        badai dan mentari, suka dan duka.
+      </p>
+      <p class="content">
+        “Kita sudah sejauh ini,” senyummu masih seperti dulu hangat dan penuh
+        cinta. Aku menatap matamu, tempat di mana aku selalu menemukan
+        ketenangan, tempat aku tahu bahwa aku benar-benar dicintai.
+      </p>
+      <p class="content">
+        Aku bersyukur setiap hari memiliki kamu di sisiku. Semoga perjalanan
+        kita ke depan penuh dengan keberkahan, kebahagiaan, dan cinta yang tak
+        pernah pudar. Mari kita terus melangkah bersama, menciptakan kenangan
+        indah lainnya.
+      </p>
+      <p class="content">
+        "Namun ada satu hal kau dan aku melintas cerita semoga tak berubah akan
+        bersama selamanya." FSTVLST - OPUS
+      </p>
+      <button onclick="showImage()">Get Started</button
+      ><!-- Button with an onclick event to show the image -->
+      <p class="footer">&copy; 2555 days of smiles.</p>
+    </div>
+  </body>
+</html>
